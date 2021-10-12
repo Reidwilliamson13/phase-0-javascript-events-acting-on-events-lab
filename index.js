@@ -11,6 +11,7 @@ function moveDodgerLeft() {
 }
 function moveDodgerRight() {
   const leftNumbers = dodger.style.left.replace("px", "");
+  // leftNumbers is "39"
   const left = parseInt(leftNumbers, 10);
 
   if (left < 320) {
@@ -24,3 +25,15 @@ document.addEventListener("keydown", function (e) {
     moveDodgerRight();
   }
 });
+
+let myAge = 25;
+if (myAge >= 18 && myAge <= 30) {
+  console.log("Yipee, i'm going on vacation!");
+} else {
+  console.log("Ok, go on!");
+}
+
+function sayhi() {
+  console.log("Hello world");
+}
+sayhi();
